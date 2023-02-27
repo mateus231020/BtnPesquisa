@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+<style>
+    .search-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #2c3441;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+
+    }
+
+    .search-box:hover >input{
+        width: 200px;  
+        padding: 0 10px;
+         }
+
+         .search-box:hover > .icon{
+            background: #536179;
+         }
+
+         .icon:hover{
+            transform: rotate(360deg) scale(0.8);
+         }
+
+         input{
+            width: 0;
+            border: none;
+            outline: none;
+            padding: 0;
+            background: none;
+            font-size: 1.1rem;
+            transition: 0.5s ease;
+            line-height: 40px;
+            color: #fff;
+
+         }
+
+         .icon{
+            color: #21dfcd;
+            float: right;
+            width: 40px;
+            height: 40px;
+            font-size: 1.3rem;
+            border-radius: 50%;
+             background: #2f3640;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             transition: 0.4s;
+             cursor: pointer;
+
+         }
+
+
+</style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Pesquisar">
+        <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></a>
+        
+      
+    
+    </div>  
+</body>
+</html>
